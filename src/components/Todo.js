@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // onClick, completed, text props were passed by the TodoList component
-const Todo = ({ onClick, completed, text }) => (
+const Todo = ({ onClick, completed, text, index }) => (
   <li
     onClick={onClick}
     style={{

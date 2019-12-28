@@ -18,6 +18,9 @@ const todos = (state = [], action) => {
         }
       ]
 
+    case 'LOAD_TODOS':
+      return [...state, ...action.payload]
+
     case 'TOGGLE_TODO':
       return state.map(todo =>
         todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
